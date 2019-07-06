@@ -174,7 +174,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="Content-Security-Policy" content="default-src 'self' https://api.github.com; script-src 'self' 'unsafe-eval'; style-src 'self' 'unsafe-inline'">
-    <title>Pi-hole Admin Console</title>
+    <title>dijo Admin Console</title>
     <!-- Usually browsers proactively perform domain name resolution on links that the user may choose to follow. We disable DNS prefetching here -->
     <meta http-equiv="x-dns-prefetch-control" content="off">
     <meta http-equiv="cache-control" content="max-age=60,private">
@@ -236,11 +236,11 @@ if($auth) {
 <div class="wrapper">
     <header class="main-header">
         <!-- Logo -->
-        <a href="http://pi-hole.net" class="logo" target="_blank">
+        <a href="http://www.dijo.io" class="logo" target="_blank">
             <!-- mini logo for sidebar mini 50x50 pixels -->
-            <span class="logo-mini">P<b>h</b></span>
+            <span class="logo-mini">d<b>o</b></span>
             <!-- logo for regular state and mobile devices -->
-            <span class="logo-lg">Pi-<b>hole</b></span>
+            <span class="logo-lg">dijo-<b>Block</b></span>
         </a>
         <!-- Header Navbar: style can be found in header.less -->
         <nav class="navbar navbar-static-top" role="navigation">
@@ -254,55 +254,27 @@ if($auth) {
                     <li class="dropdown user user-menu">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
                             <img src="img/logo.svg" class="user-image" style="border-radius: initial" sizes="160x160" alt="Pi-hole logo" />
-                            <span class="hidden-xs">Pi-hole</span>
+                            <span class="hidden-xs">Info</span>
                         </a>
                         <ul class="dropdown-menu" style="right:0">
                             <!-- User image -->
                             <li class="user-header">
                                 <img src="img/logo.svg" sizes="160x160" alt="User Image" style="border-color:transparent" />
                                 <p>
-                                    Open Source Ad Blocker
-                                    <small>Designed For Raspberry Pi</small>
+                                    dijo Block
+                                    <small>Protecting Your Home</small>
                                 </p>
                             </li>
                             <!-- Menu Body -->
                             <li class="user-body">
                                 <div class="col-xs-4 text-center">
-                                    <a class="btn-link" href="https://github.com/pi-hole" target="_blank">GitHub</a>
+                                    <a class="btn-link" href="https://www.dijo.io/pages/faq" target="_blank">FAQ</a>
                                 </div>
                                 <div class="col-xs-4 text-center">
-                                    <a class="btn-link" href="https://pi-hole.net" target="_blank">Website</a>
+                                    <a class="btn-link" href="https://www.dijo.io" target="_blank">Website</a>
                                 </div>
                                 <div class="col-xs-4 text-center">
-                                    <a class="btn-link" href="https://github.com/pi-hole/pi-hole/releases" target="_blank">Updates</a>
-                                </div>
-                                <div class="col-xs-12 text-center" id="sessiontimer">
-                                    <b>Session is valid for <span id="sessiontimercounter"><?php if($auth && strlen($pwhash) > 0){echo $maxlifetime;}else{echo "0";} ?></span></b>
-                                </div>
-                            </li>
-                            <!-- Menu Footer -->
-                            <li class="user-footer">
-                                <!-- Version Infos -->
-                                <?php /*
-                                <div class="<?php if(!isset($core_commit) && !isset($web_commit)) { ?>hidden-md <?php } ?>hidden-lg">
-                                    <b>Pi-hole Version </b> <?php
-                                    echo $core_current;
-                                    if(isset($core_commit)) { echo "<br>(".$core_branch.", ".$core_commit.")"; }
-                                    if($core_update){ ?> <a class="alert-link lookatme btn-link" href="https://github.com/pi-hole/pi-hole/releases" target="_blank" style="background:none">(Update available!)</a><?php } ?><br>
-                                    <b>Web Interface Version </b><?php
-                                    echo $web_current;
-                                    if(isset($web_commit)) { echo "<br>(".$web_branch.", ".$web_commit.")"; }
-                                    if($web_update){ ?> <a class="alert-link lookatme btn-link" href="https://github.com/pi-hole/AdminLTE/releases" target="_blank" style="background:none">(Update available!)</a><?php } ?><br>
-                                    <b>FTL Version </b> <?php
-                                    echo $FTL_current;
-                                    if($FTL_update){ ?> <a class="alert-link lookatme btn-link" href="https://github.com/pi-hole/FTL/releases" target="_blank" style="background:none">(Update available!)</a><?php } ?><br><br>
-                                </div>
-                                */ ?>
-                                <!-- PayPal -->
-                                <div class="text-center">
-                                    <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=3J2L3Z4DHW9UY" target="_blank" style="background:none">
-                                        <img src="img/donate.gif" alt="Donate">
-                                    </a>
+                                    <a class="btn-link" href="https://www.dijo.io/pages/blog" target="_blank">Blog</a>
                                 </div>
                             </li>
                         </ul>
@@ -542,13 +514,13 @@ if($auth) {
                     <!-- Tail pihole.log -->
                     <li<?php if($scriptname === "taillog.php"){ ?> class="active"<?php } ?>>
                         <a href="taillog.php">
-                            <i class="fa fa-list-ul"></i> <span>Tail pihole.log</span>
+                            <i class="fa fa-list-ul"></i> <span>Tail dijo.log</span>
                         </a>
                     </li>
                     <!-- Tail pihole-FTL.log -->
                     <li<?php if($scriptname === "taillog-FTL.php"){ ?> class="active"<?php } ?>>
                         <a href="taillog-FTL.php">
-                            <i class="fa fa-list-ul"></i> <span>Tail pihole-FTL.log</span>
+                            <i class="fa fa-list-ul"></i> <span>Tail dijo-FTL.log</span>
                         </a>
                     </li>
                     <!-- Generate debug log -->
@@ -594,8 +566,8 @@ if($auth) {
                 <?php } ?>
                 <!-- Donate -->
                 <li>
-                    <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=3J2L3Z4DHW9UY" target="_blank">
-                        <i class="fa-paypal-icon fab fa-paypal"></i> <span>Donate</span>
+                    <a href="https://www.dijo.io/pages/faq" target="_blank">
+                        <i class="fa fa-question-circle"></i> <span>FAQ</span>
                     </a>
                 </li>
                 <?php if($auth){ ?>
