@@ -9,7 +9,7 @@
 ?>
 <!-- Title -->
 <div class="page-header">
-    <h1>Output the last lines of the pihole-FTL.log file (live)</h1>
+    <h1>Output the last lines of the dijo-FTL.log file (live)</h1>
 </div>
 
 <div class="checkbox"><label><input type="checkbox" name="active" checked id="chk1"> Automatic scrolling on update</label></div>

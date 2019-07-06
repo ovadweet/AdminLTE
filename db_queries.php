@@ -19,7 +19,7 @@ $token = $_SESSION['token'];
 
 <!-- Title -->
 <div class="page-header">
-    <h1>Specify date range to be queried from the Pi-hole query database</h1>
+    <h1>Specify date range to be queried from the dijo query database</h1>
 </div>
 
 
@@ -79,7 +79,7 @@ $token = $_SESSION['token'];
 </div>
 
 <div id="timeoutWarning" class="alert alert-warning alert-dismissible fade in" role="alert" hidden="true">
-    Depending on how large of a range you specified, the request may time out while Pi-hole tries to retrieve all the data.<br/><span id="err"></span>
+    Depending on how large of a range you specified, the request may time out while dijo tries to retrieve all the data.<br/><span id="err"></span>
 </div>
 
 <!-- Small boxes (Stat box) -->
